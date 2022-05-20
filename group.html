@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Группы</title>
+  <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      text-align: left;
+      background-color: #fff;
+    }
+  </style>
+  <link rel="stylesheet" href="css/group.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="container">
+        <ul class="menu">
+          <li class="menu_item"><a href="#" class="menu_link">Панель навигации</a></li>
+          <li class="menu_item"><a href="index.html" class="menu_link">Главная</a></li>
+          <li class="menu_item"><a href="strategy.html" class="menu_link">Стратегия</a></li>
+          <li class="menu_item"><a href="#" class="menu_link">Войска</a></li>
+          <li class="menu_item"><a href="infantry.html" class="menu_link">Пехота</a></li>
+          <li class="menu_item"><a href="cavalry.html" class="menu_link">Кавалерия</a></li>
+          <li class="menu_item"><a href="archers.html" class="menu_link">Лучники</a></li>
+          <li class="menu_item"><a href="group.html" class="menu_link">Группа</a></li>
+        </ul>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <button data-toggle="modal-1" class="btn btn__or show-modal1">Группа 1</button>
+    <button data-toggle="modal-2" class="btn btn__gr show-modal2">Группа 2</button>
+    <button data-toggle="modal-3" class="btn btn__kr show-modal3">Группа 3</button>
+  </div>
+
+  
+
+  <script src="js/modalScript.js"></script>
+    <script>
+      (function () {
+          // создаём модальное окно
+        let modal1 = $modal({
+          title: 'Группа 1',
+          content: 'walodia<br> W1onch1k<br> Vikt39<br> 3Маришка<br> Lord hiro<br> Tanya04<br>',
+        });
+        let modal2 = $modal({
+          title: 'Группа 2',
+          content: 'PYYYSYYYK<br> BGOld<br> Nailka84<br> datf1re<br> Rasta999<br> Arttem23<br>'
+        });
+        let modal3 = $modal({
+          title: 'Группа 3',
+          content: 'Sabibo511<br> Fandehui<br> Talal Elshamy<br> Beertrinker<br> LEVI<br> Partizan83<br>',
+
+        });
+        // при клике по кнопке #show-modal
+        document.addEventListener('click', function (e) {
+          if (e.target.dataset.toggle === 'modal-1') {
+            // отобразим модальное окно N1
+            modal1.show();
+          } else if (e.target.dataset.toggle === 'modal-2') {
+            // отобразим модальное окно N2
+            modal2.show();
+          } else if (e.target.dataset.toggle === 'modal-3') {
+            modal3.show();
+          }
+        });
+      })();
+    </script>
+</body>
+</html>
