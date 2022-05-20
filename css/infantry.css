@@ -1,0 +1,78 @@
+.blue {
+  text-align: center;
+  color: blue;
+}
+
+/* Слайдер */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.carousel-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width:100%;
+}
+
+.carousel{
+  display: flex;
+  align-items: center;
+  width: 150px;
+  box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.35);
+  position: relative;
+}
+
+.carousel-images{
+  display: flex;
+  overflow: hidden; 
+  border-radius: 11px;
+}
+
+.carousel-image{
+  transition: all .9s;
+  width: 200px;
+  transform: translateX(0);
+}
+
+
+.btn-left,
+.btn-right{
+  
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  position: absolute;
+  cursor:pointer;
+  opacity: .75;
+  transition: all .25s;
+  z-index: 1;
+}
+
+.btn-left:hover,
+.btn-right:hover{
+  opacity: 1;
+}
+
+.btn-left{
+  top: 50%;
+  left: -1.5rem;
+  transform: translateY(-50%);
+}
+.btn-right{
+  top: 50%;
+  right: -1.5rem;
+  transform: translateY(-50%);
+}
+
+.icon-left,
+.icon-right{
+  font-size: 2rem;
+  color: #22b8cf;
+}

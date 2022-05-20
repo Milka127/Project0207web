@@ -1,0 +1,23 @@
+
+.modal-content {
+  width: 600px;
+}
+.btn__color {
+  margin-left: 470px;
+  color: white;
+  background-color: firebrick;
+  width: 150px;
+  height: 50px;
+}
+.col-md-4 {
+  text-align: center;
+}
+.or {
+  color: rgb(238, 255, 0);
+}
+.gr {
+  color: yellowgreen;
+}
+.kr {
+  color: orange;
+}

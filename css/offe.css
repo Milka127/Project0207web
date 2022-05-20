@@ -1,0 +1,105 @@
+.offe {
+    padding: 70px 0 100px 0;
+    position: relative
+}
+  
+.offe .container {
+    display: flex;
+    justify-content: space-between
+}
+  
+.offe .bgc_y {
+    position: absolute;
+    width: 1109px;
+    height: 780px;
+    z-index: -1;
+    top: 50px
+}
+  
+.offe__text {
+    width: 350px;
+    font-size: 18px;
+}
+  
+.offe__descr {
+    font-size: 18px;
+    margin-top: 30px;
+    font-weight: 300;
+    line-height: 24px
+}
+  
+.offe__action {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end
+}
+  
+.offe__advantages {
+    width: 330px;
+    margin-top: 50px
+}
+  
+.offe__advantages h2 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 20px
+}
+  
+.offe__advantages h2:first-child {
+    margin-top: 70px
+}
+  
+.offe__advantages-text {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px
+}
+  
+.offe__slider {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end
+}
+  
+.offe__slider-counter {
+    display: flex;
+    width: 180px;
+    align-items: center;
+    font-size: 24px;
+    color: rgba(0, 0, 0, .5)
+}
+  
+.offe__slider-wrapper {
+    width: 100%;
+    margin-top: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .25)
+}
+  
+.offe__slider-prev {
+    margin-right: 10px;
+    cursor: pointer
+}
+  
+.offe__slider-next {
+    margin-left: 10px;
+    cursor: pointer
+}
+  
+.offe__slider #currenr {
+    font-size: 48px;
+    font-weight: 700;
+    color: #000
+}
+  
+.offe__slide {
+    width: 100%;
+    height: 590px
+}
+  
+.offe__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
